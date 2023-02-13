@@ -1,12 +1,28 @@
+/* Global CSS Rules */
 * {
   box-sizing: border-box;
 }
 body {
   overflow-x: hidden;
 }
+/* Common Styles */
 .container {
   padding: 15px;
   margin-top: 20px;
+}
+.section-4-left,
+.section-8-left {
+  position: relative;
+}
+.section-4-left::before,
+.section-8-left::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  width: 50px;
+  height: 2px;
+  background-color: #ff6057;
 }
 /* The top left image */
 .topLeft-image img {
@@ -37,8 +53,6 @@ body {
   right: -563px;
 }
 /* The header */
-header {
-}
 header h1 {
   color: #fff7f6;
 }
@@ -60,8 +74,6 @@ header button {
   background-image: linear-gradient(to right, #f45f60, #b4639b);
 }
 /* Section 2 */
-.section-2 .left {
-}
 .section-2 .left p {
   color: #fff9f9;
 }
@@ -82,20 +94,6 @@ header button {
   width: 200px;
 }
 /* Section 4 */
-.section-4-left,
-.section-8-left {
-  position: relative;
-}
-.section-4-left::before,
-.section-8-left::before {
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: 10px;
-  width: 50px;
-  height: 2px;
-  background-color: #ff6057;
-}
 .section-4-left h3 {
   width: 51%;
 }
@@ -203,7 +201,6 @@ header button {
   background-color: red;
 }
 /* Section 9 */
-
 .section-9-left h2 {
   width: 65%;
   font-size: 28px;
@@ -326,7 +323,6 @@ header button {
   background-image: linear-gradient(to right, #f45f60, #b4639b);
   margin-top: 20px;
 }
-
 /* Footer */
 footer {
   margin-top: 30px;
@@ -344,9 +340,6 @@ footer .column-2 p {
 footer .column-2 h6,
 footer .column-3 h6 {
   margin-top: 16px;
-}
-footer .column-3 {
-  /* position: relative; */
 }
 footer .column-3 form {
   height: 42px;
