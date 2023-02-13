@@ -24,7 +24,7 @@ body {
   height: 2px;
   background-color: #ff6057;
 }
-/* The top left image */
+/* Bacjground Images */
 .topLeft-image img {
   position: absolute;
   top: 0;
@@ -32,7 +32,6 @@ body {
   z-index: -1;
   height: 80%;
 }
-/* The middle left image */
 .middleLeft-image img {
   position: absolute;
   top: 97%;
@@ -42,7 +41,6 @@ body {
   transform: rotate(244deg);
   left: -750px;
 }
-/* The buttom right image */
 .rightButtom-image img {
   position: absolute;
   top: 307%;
@@ -363,7 +361,7 @@ footer .column-3 form span {
   right: 0;
 }
 /* Media Queries */
-/* Images */
+/* Bacjground Images */
 @media (max-width: 767px) {
   .topLeft-image {
     background-image: url(./resources/background_image);
@@ -408,10 +406,16 @@ footer .column-3 form span {
   }
   .section-2 .left h2 {
     margin: auto;
+    text-align: center;
+    width: 60%;
   }
   .section-2 .left button {
     display: block;
     margin: 0 auto 10px;
+    padding: 4px 40px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 17px;
   }
 }
 @media (max-width: 575px) {
@@ -425,7 +429,7 @@ footer .column-3 form span {
   .section-4-left h3,
   .section-4-left p:first-of-type,
   .section-4-left p:nth-of-type(2) {
-    margin: auto;
+    margin: 7px auto 0;
     text-align: center;
   }
   .section-4-left p:nth-of-type(2) {
@@ -453,6 +457,11 @@ footer .column-3 form span {
     left: 45%;
   }
 }
+@media (max-width: 575px) {
+  .section-4-right .column p {
+    text-align: center;
+  }
+}
 /* Section 5 */
 @media (max-width: 767px) {
   .section-5-right {
@@ -471,10 +480,16 @@ footer .column-3 form span {
   }
 }
 /* Section 9 */
+@media (max-width: 991px) {
+  .section-9-right p {
+    width: 100%;
+  }
+}
 @media (max-width: 767px) {
   .section-9-left h2,
   .section-9-left p {
     margin: 0 auto 10px;
+    text-align: center;
   }
   .section-9-left button {
     margin: 0 auto 15px;
@@ -489,6 +504,7 @@ footer .column-3 form span {
   .section-9-left p,
   .section-9-right p {
     width: 100%;
+    text-align: center;
   }
 }
 /* Section 10 */
@@ -501,10 +517,18 @@ footer .column-3 form span {
   .section-10 h2 {
     width: 40%;
   }
+  .section-6 p:first-child {
+    width: 80%;
+    margin: auto;
+  }
 }
 @media (max-width: 575px) {
   .section-10 h2 {
     width: 45%;
+  }
+  .section-6 p:first-child {
+    width: 100%;
+    margin: auto;
   }
 }
 /* Section 12 */
@@ -514,7 +538,8 @@ footer .column-3 form span {
   }
   .section-12-right h2,
   .section-12-right p {
-    margin: auto;
+    margin: 15px auto 10px;
+    text-align: center;
   }
   .section-12-right button {
     display: block;
@@ -531,7 +556,7 @@ footer .column-3 form span {
   }
   .section-12-right h2,
   .section-12-right p {
-    margin: auto;
+    margin: 15px auto;
   }
   .section-12-right button {
     display: block;
@@ -546,7 +571,7 @@ footer .column-3 form span {
     text-align: center;
   }
   .section-12-right h2 {
-    margin-bottom: 10px;
+    margin: 15px 0;
   }
 }
 /* Footer */
